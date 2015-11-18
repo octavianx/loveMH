@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="117" id="KGk-i7-Jjw" customClass="MHTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foS-gH-WV4">
+                        <rect key="frame" x="5" y="0.0" width="15" height="119"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="T18-72-exF"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="cate_left.png"/>
+                        <connections>
+                            <action selector="movebtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aio-B0-Cdh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg6-E8-IAp">
+                        <rect key="frame" x="349" y="0.0" width="15" height="119"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Zfc-vb-Nuh"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="cate_right.png"/>
+                        <connections>
+                            <action selector="foraward:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="In5-5D-djb"/>
+                        </connections>
+                    </button>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVL-4L-xQL">
+                        <rect key="frame" x="20" y="0.0" width="329" height="119"/>
+                        <animations/>
+                    </scrollView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Jg6-E8-IAp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2U7-5u-ldC"/>
+                    <constraint firstAttribute="bottom" secondItem="hVL-4L-xQL" secondAttribute="bottom" id="3bb-dD-glG"/>
+                    <constraint firstItem="foS-gH-WV4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="I2q-oD-50r"/>
+                    <constraint firstItem="hVL-4L-xQL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KeU-5S-MlV"/>
+                    <constraint firstItem="hVL-4L-xQL" firstAttribute="leading" secondItem="foS-gH-WV4" secondAttribute="trailing" id="SB9-ge-65t"/>
+                    <constraint firstItem="foS-gH-WV4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XPh-z8-0up"/>
+                    <constraint firstAttribute="trailing" secondItem="Jg6-E8-IAp" secondAttribute="trailing" constant="5" id="hjU-YV-UXI"/>
+                    <constraint firstAttribute="bottom" secondItem="Jg6-E8-IAp" secondAttribute="bottom" id="osV-dt-3zb"/>
+                    <constraint firstAttribute="bottom" secondItem="foS-gH-WV4" secondAttribute="bottom" id="rlM-Qu-DKx"/>
+                    <constraint firstItem="Jg6-E8-IAp" firstAttribute="leading" secondItem="hVL-4L-xQL" secondAttribute="trailing" id="xaA-vf-GfL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="backbtn" destination="foS-gH-WV4" id="Hkr-u7-IYD"/>
+                <outlet property="forawardbtn" destination="Jg6-E8-IAp" id="r1l-YS-UOP"/>
+                <outlet property="scorllView" destination="hVL-4L-xQL" id="Pof-f2-SwL"/>
+            </connections>
+            <point key="canvasLocation" x="213.5" y="321.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cate_left.png" width="8" height="22"/>
+        <image name="cate_right.png" width="8" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHHomeCover">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="134"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lnu-sS-Vat" userLabel="CoverImage">
+                    <rect key="frame" x="10" y="10" width="62" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="6Jg-ng-Wlr"/>
+                        <constraint firstAttribute="height" constant="50" id="Tm1-wp-UdN"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Jg-ng-Wlr"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEE-5w-vcC" userLabel="title">
+                    <rect key="frame" x="10" y="65" width="62" height="15"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-Sj-MzH" userLabel="author">
+                    <rect key="frame" x="10" y="90" width="62" height="10"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-9F-fLi">
+                    <rect key="frame" x="2" y="110" width="12" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="Zih-ux-aWR"/>
+                        <constraint firstAttribute="width" constant="12" id="f5G-Ts-AQI"/>
+                    </constraints>
+                    <state key="normal" image="grade_btn_icon.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-tP-VZM">
+                    <rect key="frame" x="14" y="110" width="12" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="60J-xv-3xV"/>
+                        <constraint firstAttribute="width" constant="12" id="PXL-EJ-yT5"/>
+                    </constraints>
+                    <state key="normal" image="grade_btn_icon.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxm-lB-qVw">
+                    <rect key="frame" x="26" y="110" width="12" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="54z-iA-eh0"/>
+                        <constraint firstAttribute="height" constant="12" id="QCj-bH-bAB"/>
+                    </constraints>
+                    <state key="normal" image="grade_btn_icon.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-8N-cfF">
+                    <rect key="frame" x="38" y="110" width="12" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="ELZ-vG-won"/>
+                        <constraint firstAttribute="width" constant="12" id="NXE-Ay-ykg"/>
+                    </constraints>
+                    <state key="normal" image="grade_btn_icon.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm1-Yc-H1D">
+                    <rect key="frame" x="50" y="110" width="12" height="12"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="8Za-bc-xHm"/>
+                        <constraint firstAttribute="height" constant="12" id="sJh-cV-C7F"/>
+                    </constraints>
+                    <state key="normal" image="grade_btn_icon.png"/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ymp-Sj-MzH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="0t9-vk-JjY"/>
+                <constraint firstItem="lYh-tP-VZM" firstAttribute="top" secondItem="Ymp-Sj-MzH" secondAttribute="bottom" constant="10" id="Fvg-xy-KG5"/>
+                <constraint firstAttribute="trailing" secondItem="pEE-5w-vcC" secondAttribute="trailing" constant="10" id="GZx-HP-7MU"/>
+                <constraint firstItem="Wm1-Yc-H1D" firstAttribute="top" secondItem="Ymp-Sj-MzH" secondAttribute="bottom" constant="10" id="PY6-cs-jkT"/>
+                <constraint firstItem="Ymp-Sj-MzH" firstAttribute="top" secondItem="pEE-5w-vcC" secondAttribute="bottom" constant="10" id="Qli-w5-9Wh"/>
+                <constraint firstItem="cxO-8N-cfF" firstAttribute="top" secondItem="Ymp-Sj-MzH" secondAttribute="bottom" constant="10" id="TVl-9e-pZs"/>
+                <constraint firstItem="Lnu-sS-Vat" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="c4q-0r-sTe"/>
+                <constraint firstItem="eQr-9F-fLi" firstAttribute="top" secondItem="Ymp-Sj-MzH" secondAttribute="bottom" constant="10" id="cI0-s8-32a"/>
+                <constraint firstItem="lYh-tP-VZM" firstAttribute="leading" secondItem="eQr-9F-fLi" secondAttribute="trailing" id="fHV-4e-j2Z"/>
+                <constraint firstAttribute="trailing" secondItem="Lnu-sS-Vat" secondAttribute="trailing" constant="10" id="j30-HN-9w6"/>
+                <constraint firstItem="pEE-5w-vcC" firstAttribute="top" secondItem="Lnu-sS-Vat" secondAttribute="bottom" constant="5" id="mzD-T0-slR"/>
+                <constraint firstItem="nxm-lB-qVw" firstAttribute="top" secondItem="Ymp-Sj-MzH" secondAttribute="bottom" constant="10" id="oQH-R3-Dhi"/>
+                <constraint firstAttribute="trailing" secondItem="Ymp-Sj-MzH" secondAttribute="trailing" constant="10" id="ojy-Oq-pjc"/>
+                <constraint firstItem="nxm-lB-qVw" firstAttribute="leading" secondItem="lYh-tP-VZM" secondAttribute="trailing" id="pM6-qk-nbs"/>
+                <constraint firstItem="cxO-8N-cfF" firstAttribute="leading" secondItem="nxm-lB-qVw" secondAttribute="trailing" id="qVj-9W-1yH"/>
+                <constraint firstItem="Wm1-Yc-H1D" firstAttribute="leading" secondItem="cxO-8N-cfF" secondAttribute="trailing" id="r2L-Bf-L35"/>
+                <constraint firstItem="Lnu-sS-Vat" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="tCf-01-WrJ"/>
+                <constraint firstItem="eQr-9F-fLi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="vi7-2i-ejJ"/>
+                <constraint firstItem="pEE-5w-vcC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zRd-NO-tFa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorlabel" destination="Ymp-Sj-MzH" id="pUu-oc-fef"/>
+                <outlet property="coverImage" destination="Lnu-sS-Vat" id="GZk-DZ-Xla"/>
+                <outlet property="titleLabel" destination="pEE-5w-vcC" id="jUI-kG-OFH"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner1.jpg" width="479" height="300"/>
+        <image name="grade_btn_icon.png" width="20" height="20"/>
+    </resources>
+</document>
