@@ -13,6 +13,7 @@
 #import "MHHomeController.h"
 #import "UMSocial.h"
 #import "MHRecentUpdateController.h"
+#import "MHPersonSetController.h"
 //每卷按钮的宽和高
 static CGFloat buttonH = 60;
 static CGFloat buttonW = 60;
@@ -21,7 +22,6 @@ static CGFloat buttonM = 20;
 //每卷按钮的上下间距
 static CGFloat buttonS = 20;
 @interface MHLeftSilderViewController ()
-
 /**
  *  毛玻璃
  */
@@ -103,9 +103,13 @@ static CGFloat buttonS = 20;
         if (response.responseCode == UMSResponseCodeSuccess) {
             UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:UMShareToQQ];
             NSLog(@"username is %@, uid is %@, token is %@ url is %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL);
+            [[UMSocialDataService defaultDataService] requestSnsInformation:UMShareToQQ  completion:^(UMSocialResponseEntity *response){
+                NSLog(@"SnsInformation is %@",response.data);
+            }];
         }});
     
 }
+
 - (void)chick:(UIButton *)sender {
     
     if (sender.tag == 0) {
@@ -131,9 +135,18 @@ static CGFloat buttonS = 20;
     }
     
     if (sender.tag == 4) {
+        
         DDLogVerbose(@"点击了历史记录按钮");
         [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[MHHistoryController alloc] init]] animated:YES];
          [self.sideMenuViewController hideMenuViewController];
+    }
+    if (sender.tag == 7) {
+        DDLogVerbose(@"点击了个人设置按钮");
+        
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[MHPersonSetController new]] animated:YES];
+        [self.sideMenuViewController hideMenuViewController];
+        
+        
     }
     
 }
@@ -153,11 +166,6 @@ static CGFloat buttonS = 20;
     return tempImg;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 /*
 #pragma mark - Navigation

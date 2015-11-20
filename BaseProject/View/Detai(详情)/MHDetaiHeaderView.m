@@ -85,6 +85,7 @@
     }
     [self.coverImage setImageWithURL:[NSURL URLWithString:object.comic_cover]];
     
+    
     self.nameLB.text = object.comic_name;
     
     self.authorLB.text = object.comic_author;

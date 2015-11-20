@@ -54,6 +54,7 @@
 		453B0E4D1BEB96430094FB04 /* control_bg_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B0E4B1BEB96430094FB04 /* control_bg_shadow.png */; settings = {ASSET_TAGS = (); }; };
 		453B0E4E1BEB96430094FB04 /* control_bg_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B0E4C1BEB96430094FB04 /* control_bg_shadow@2x.png */; settings = {ASSET_TAGS = (); }; };
 		4541BB6B1BF9925600308699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4541BB6A1BF9925600308699 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		4544C7AE1BFF07170042FA93 /* MHPersonSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4544C7AD1BFF07170042FA93 /* MHPersonSetController.m */; settings = {ASSET_TAGS = (); }; };
 		4544E1971BFC108600C4F498 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4544E1961BFC108600C4F498 /* CHTCollectionViewWaterfallLayout.m */; settings = {ASSET_TAGS = (); }; };
 		4544E19D1BFC175B00C4F498 /* PSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4544E19A1BFC175B00C4F498 /* PSCollectionView.m */; settings = {ASSET_TAGS = (); }; };
 		4544E19E1BFC175B00C4F498 /* PSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4544E19C1BFC175B00C4F498 /* PSCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -353,6 +354,8 @@
 		453B0E4B1BEB96430094FB04 /* control_bg_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_bg_shadow.png; sourceTree = "<group>"; };
 		453B0E4C1BEB96430094FB04 /* control_bg_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "control_bg_shadow@2x.png"; sourceTree = "<group>"; };
 		4541BB6A1BF9925600308699 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4544C7AC1BFF07170042FA93 /* MHPersonSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPersonSetController.h; sourceTree = "<group>"; };
+		4544C7AD1BFF07170042FA93 /* MHPersonSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPersonSetController.m; sourceTree = "<group>"; };
 		4544E1951BFC108600C4F498 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		4544E1961BFC108600C4F498 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		4544E1991BFC175B00C4F498 /* PSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCollectionView.h; sourceTree = "<group>"; };
@@ -826,7 +829,7 @@
 				45F371951BE05FF400C85465 /* Detai(详情) */,
 				45F415F81BE9AD49003D3328 /* 收藏菜单 */,
 				453B0E2E1BEB81120094FB04 /* 历史记录 */,
-				45462B6D1BE8AB5300E45601 /* 搜索结果View */,
+				45462B6D1BE8AB5300E45601 /* 搜索结果 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				45462B501BE8503800E45601 /* 搜索 */,
 				459614DB1BF20F9800DBAA78 /* 内容 */,
 				4574C8681BF4CA33008F010C /* 最近更新 */,
+				4544C7AB1BFF06960042FA93 /* 个人设置页面 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -979,6 +983,15 @@
 			path = "首页";
 			sourceTree = "<group>";
 		};
+		4544C7AB1BFF06960042FA93 /* 个人设置页面 */ = {
+			isa = PBXGroup;
+			children = (
+				4544C7AC1BFF07170042FA93 /* MHPersonSetController.h */,
+				4544C7AD1BFF07170042FA93 /* MHPersonSetController.m */,
+			);
+			path = "个人设置页面";
+			sourceTree = "<group>";
+		};
 		4544E1981BFC175B00C4F498 /* 瀑布流控件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,13 +1064,14 @@
 			path = "../../View/搜索结果页面";
 			sourceTree = "<group>";
 		};
-		45462B6D1BE8AB5300E45601 /* 搜索结果View */ = {
+		45462B6D1BE8AB5300E45601 /* 搜索结果 */ = {
 			isa = PBXGroup;
 			children = (
 				45462B6E1BE8ABF900E45601 /* MHResultDetailCell.h */,
 				45462B6F1BE8ABF900E45601 /* MHResultDetailCell.m */,
 				45462B701BE8ABF900E45601 /* MHResultDetailCell.xib */,
 			);
+			name = "搜索结果";
 			path = "搜索结果View";
 			sourceTree = "<group>";
 		};
@@ -1838,6 +1852,7 @@
 				459614E11BF218FC00DBAA78 /* MHContentImage.m in Sources */,
 				4548750F1BDE4650001EC01B /* MHHotrecommendNetManager.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				4544C7AE1BFF07170042FA93 /* MHPersonSetController.m in Sources */,
 				453B0E181BEB52950094FB04 /* SWLongPressGestureRecognizer.m in Sources */,
 				4544E1971BFC108600C4F498 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				45B889891BECC1E70068FAD8 /* MHRecommendModel.m in Sources */,
